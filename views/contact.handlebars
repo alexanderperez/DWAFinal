@@ -1,0 +1,150 @@
+<!--
+<div class="logoImage">
+    <img src="../images/apLogoDraft.png">
+    <a href="/ap">
+        <img src="http://sites.bxmc.poly.edu/~alexanderperez/DynamicWeb/midterm/images/apLogoDraft.png">
+    </a>
+</div>
+-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/ap">APAUDIOPRO</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/ap/portfolio">Portfolio </a></li>
+        <li><a href="/ap/services">Services </a></li>
+        <li class="active"><a href="/ap/contact">Contact <span class="sr-only">(current)</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/ap/auth/google">Login with Google</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<h1>Contact Me</h1>
+
+<form action="/ap/contact" method="post" enctype="multipart/form-data">
+    
+    <p class="form-group" id="contactForm">
+       <label for="name"></label>
+       <input type="text" name="name" class="form-control" placeholder="Enter Name" id="contactForm" size="50%">
+    </p>
+    
+    <p class="form-group" id="contactForm">
+        <label for="email"></label>
+        <input type="email" name="email" class="form-control" placeholder="Enter Email" id="contactForm" size="50">
+    </p>
+    
+    <p class="form-group" id="contactForm">
+        <label for="musicLink"></label>
+        <input type="text" name="musicLink" class="form-control" placeholder="Enter Music Link (optional)" id="contactForm" size="50">
+    </p>
+    
+    <p class="form-group">
+        <label for="sessionType" name="sessionType" id="contactForm">Session Type:</label>
+        <select class="form-control" id="contactForm">
+            <option value="instrvox">Instrumental and Vocal</option>
+            <option value="pminstrvox">Pre-mixed Instrumental and Vocal</option>
+            <option value="instr">Instrumental</option>
+        </select>
+    </p>
+    
+    <p class="form-group">
+        <label for="genre" id="contactForm">Genre: </label>
+        <select class="form-control" name="genre" id="contactForm">
+            <option value="hiphop">Hip Hop</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="rnb">R&amp;B</option>
+            <option value="indie">Indie</option>
+            <option value="other">Other</option>
+        </select>
+    </p>
+    
+    <p>
+        <label for="refUpload" id="contactForm">Reference Upload: </label>
+        <input type="file" name="refUpload" accepts="audio/*" size="50">
+    </p>
+    
+<!--
+    <p class="form-group">
+        <label for="refUpload" id="contactForm">Reference Upload (optional): </label>
+        <input type="file" class="form-control-file" id="refUpload" accepts="audio/*">
+    </p>
+-->
+    
+    <p class="form-group">
+        <label for="comment" id="contactForm">Comments: <br></label>
+        <textarea class="form-control" name="comments" id="contactForm" rows="3" style="min-width: 40%"></textarea>
+    </p>
+    
+<!--
+    <div>
+        <input type="submit">
+    </div>
+-->
+    <button type="submit" class="btn btn-primary" href="/ap/submitted">Submit</button>
+</form>
+
+<!--
+<form action="/ap/contact" method="post" enctype="multipart/form-data">
+    
+    <p>
+        <label for="name">Name: </label>
+        <input type="text" name="name" size="50">
+    </p>
+    
+    <p>
+        <label for="email">Email: </label>
+        <input type="text" name="email" size="50">
+    </p>
+    
+    <p>
+        <label for="musicLink">Music Link (optional): </label>
+        <input type="text" name="musicLink" size="33">
+    </p>
+    
+    <p>
+        <label for="sessionType">Session Type: </label>
+        <select name="sessionType">
+            <option value="instrvox">Instrumental and Vocal</option>
+            <option value="pminstrvox">Pre-mixed Instrumental and Vocal</option>
+            <option value="instr">Instrumental</option>
+        </select>
+    </p>
+    
+    <p>
+    <label for="genre">Genre: </label>
+        <select name="genre">
+            <option value="hiphop">Hip Hop</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="rnb">R&amp;B</option>
+            <option value="indie">Indie</option>
+            <option value="other">Other</option>
+        </select>
+    </p>
+    
+    <p>
+        <label for="refUpload">Reference Upload (optional): </label>
+        <input type="file" name="refUpload" accepts="audio/*" size="50">
+    </p>
+    
+    <div>
+        <input type="submit">
+    </div>
+    
+</form>-->
