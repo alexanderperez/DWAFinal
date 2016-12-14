@@ -46,19 +46,24 @@ router.get('/myfiles', function(req, res) {
 	res.render('myFiles');
 });
 
+router.get('/logout', function(req, res) {
+	res.locals.title = 'APAUDIO - Logout';
+	res.render('logout');
+});
+
 router.get('/test', function(req, res) {
 	res.locals.title = 'APAUDIO - TEST';
 	res.render('test');
 });
 
 
-// Google routes
-router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-
-router.get('/auth/google/callback', passport.authenticate('google', {  
-  successRedirect: '/contact',
-  failureRedirect: '/ap',
-}));
+//// Google routes
+//router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+//
+//router.get('/auth/google/callback', passport.authenticate('google', {  
+//  successRedirect: '/contact',
+//  failureRedirect: '/ap',
+//}));
 
 //router.post('/contact', function(req, res) {
 router.post('/contact', upload.single('refUpload'), function(req, res) {

@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/ap">APAUDIOPRO</a>
+      <a class="navbar-brand active" href="/ap">APAUDIOPRO<span class="sr-only">(current)</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,22 +18,9 @@
         <li><a href="/ap/services">Services</a></li>
         <li><a href="/ap/contact">Contact</a></li>
       </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/ap/account">Account<span class="sr-only">(current)</span></a></li>
-            <li><a href="/ap/myfiles">My Files</a></li>
-            <li><a href="/ap/logout">Logout</a></li>
-<!--
-            <li class="dropdown">
-                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">User <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="active"><a tabindex="-1" href="/ap/account">Account<span class="sr-only">(current)</span></a></li>
-                    <li><a tabindex="-1" href="/ap/myfiles">My Files</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a tabindex="-1" href="/ap/logout">Logout</a></li>
-                </ul>
-            </li>
--->
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/ap/auth/google">Login with Google</a></li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -43,20 +30,15 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 <div class="container">
     <div class="text-center">
-        <h1>Account Info</h1>
+        <h1>Logged Out</h1>
 <!--        <a href="/logout" class="btn btn-default btn-sm">Logout</a>-->
     </div>
     <div class="row">
         <!-- GOOGLE INFORMATION -->
         <div class="col-sm-6 col-sm-offset-3">
             <div class="well">
-                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google</h3>
-
                     <p>
-                        <strong>id</strong>: <%= user.google.id %><br>
-                        <strong>token</strong>: <%= user.google.token %><br>
-                        <strong>email</strong>: <%= user.google.email %><br>
-                        <strong>name</strong>: <%= user.google.name %>
+                        You are logged out.
                     </p>
 
             </div>

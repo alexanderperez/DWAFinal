@@ -1,10 +1,11 @@
 // code based on https://scotch.io/tutorials/easy-node-authentication-google
 //           and https://www.danielgynn.com/node-auth-part2/
+//           and http://passportjs.org/docs/google
 // load all the things we need
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 //// load up the user model
-var User = require('../models/user')();
+var User = require('../models/user');
 
 // load the auth variables
 var configAuth = require('./auth');

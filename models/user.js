@@ -1,10 +1,11 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-module.exports = function(){
-    var userSchema = new Schema ({  
+var userSchema = mongoose.Schema({
+    google: {
         id: String,
         token: String,
         email: String,
         name: String,
-  });
-};
+    }
+});
+
+module.exports = mongoose.model('User', userSchema);
