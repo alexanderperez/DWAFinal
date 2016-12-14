@@ -5,13 +5,13 @@ if (typeof S3BL_IGNORE_PATH == 'undefined' || S3BL_IGNORE_PATH!=true) {
 }
 
 if (typeof BUCKET_URL == 'undefined') {
-  var BUCKET_URL = location.protocol + '//' + location.hostname;
+  var BUCKET_URL = location.protocol + '/' + location.hostname;
 }
 
 if (typeof BUCKET_NAME != 'undefined') {
     // if bucket_url does not start with bucket_name,
     // assume path-style url
-    if (!~BUCKET_URL.indexOf(location.protocol + '//' + BUCKET_NAME)) {
+    if (!~BUCKET_URL.indexOf(location.protocol + '/' + BUCKET_NAME)) {
         BUCKET_URL += '/' + BUCKET_NAME;
     }
 }
@@ -176,7 +176,7 @@ function prepareTable(info) {
     item.keyText = item.Key.substring(prefix.length);
     if (item.Type === 'directory') {
       if (S3BL_IGNORE_PATH) {
-        item.href = location.protocol + '//' + location.hostname + location.pathname + '?prefix=' + item.Key;
+        item.href = location.protocol + '/' + location.hostname + location.pathname + '?prefix=' + item.Key;
       } else {
         item.href = item.keyText;
       }
